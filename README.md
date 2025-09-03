@@ -2,7 +2,7 @@
 
 Welcome to the **Three.js Car Project**!  
 This project is a virtual showroom for a 3D car model, built with [Three.js](https://threejs.org/).  
-Explore and interact with a realistic car in a modern web environment.
+Explore and interact with a car in a modern web environment.
 
 ---
 
