@@ -26,6 +26,7 @@ const updateSizes = () => {
 };
 const recalculateViewport = () => {
   updateSizes();
+  camera.aspect = sizes.width / sizes.height;
 };
 
 // Updates Projection Matrix And Recalculates Viewport
@@ -34,4 +35,4 @@ const updateCamera = () => {
   camera.updateProjectionMatrix();
 };
 
-export { camera };
+export { camera, updateCamera };
