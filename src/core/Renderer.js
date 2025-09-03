@@ -1,9 +1,9 @@
+import * as THREE from "three";
 import { canvas } from "../Selectors.js";
-import { WebGLRenderer } from "three/src/Three.js";
 // Initialize Renderer
-const renderer = new WebGLRenderer({ canvas: canvas, antialias: true });
+const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
 
-// Initial render
+// Renderer Size
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 // Set Pixelratio

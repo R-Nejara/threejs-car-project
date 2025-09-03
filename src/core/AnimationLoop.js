@@ -1,3 +1,4 @@
+import * as THREE from "three";
 import { renderer } from "./Renderer.js";
 import { scene } from "./Scene.js";
 import { camera } from "./Camera.js";
@@ -6,6 +7,7 @@ import { camera } from "./Camera.js";
 const runScene = () => {
   window.requestAnimationFrame(runScene);
   renderer.render(scene, camera);
+  camera.updateProjectionMatrix();
 };
 
 export { runScene };
