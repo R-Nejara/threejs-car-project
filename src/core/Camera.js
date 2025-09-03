@@ -1,12 +1,5 @@
 import * as THREE from "three";
-// Initialize Sizes
-const sizes = {
-  width: window.innerWidth,
-  height: window.innerHeight,
-  get aspect() {
-    return this.width / this.height;
-  },
-};
+import { sizes, updateSizes } from "../utils/helpers";
 
 // Initialize Camera
 const camera = new THREE.PerspectiveCamera(
@@ -19,14 +12,9 @@ const camera = new THREE.PerspectiveCamera(
 // Set Camera Position
 camera.position.z = 5;
 
-// Calculates New Width and Height
-const updateSizes = () => {
-  sizes.width = window.innerWidth;
-  sizes.height = window.innerHeight;
-};
 const recalculateViewport = () => {
   updateSizes();
-  camera.aspect = sizes.width / sizes.height;
+  camera.aspect = sizes.aspect;
 };
 
 // Updates Projection Matrix And Recalculates Viewport
