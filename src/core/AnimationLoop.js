@@ -1,6 +1,6 @@
 import { updateCamera } from "./Camera.js";
 import { updateControls } from "../controls/OrbitControls.js";
-import { updateRenderer } from "./Renderer.js"
+import { updateRenderer } from "./Renderer.js";
 
 // Render Loop
 const runScene = () => {
