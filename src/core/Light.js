@@ -4,7 +4,7 @@ const directionalLight = new THREE.DirectionalLight(0xffffff, 5);
 directionalLight.castShadow = true;
 const directionalLightPosition = new THREE.Vector3(10, 10, 0);
 directionalLight.position.copy(directionalLightPosition);
-directionalLight.shadow.normalBias = 0.2;
+directionalLight.add(new THREE.AxesHelper(10));
 
 const ambientLight = new THREE.AmbientLight(0xffffff, 1);
 
