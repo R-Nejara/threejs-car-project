@@ -6,6 +6,5 @@ modelGroup.traverse((child) => {
   child.castShadow = true;
   child.receiveShadow = true;
 });
-console.log(modelGroup);
 
 export { modelGroup };
