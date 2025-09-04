@@ -1,13 +1,12 @@
-import { updateCamera } from "./Camera.js";
+import { camera, updateCamera } from "./Camera.js";
 import { updateControls } from "../controls/OrbitControls.js";
-import { updateRenderer } from "./Renderer.js";
+import { render } from "./Renderer.js";
 
 // Render Loop
 const runScene = () => {
   window.requestAnimationFrame(runScene);
-  updateCamera();
   updateControls();
-  updateRenderer();
+  render();
 };
 
 export { runScene };
