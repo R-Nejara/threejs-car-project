@@ -17,10 +17,12 @@ renderer.setPixelRatio = Math.min(2, devicePixelRatio);
 // Renderer Size Updater
 const updateRenderer = () => {
   updateSizes();
-  renderer.render(scene, camera);
   renderer.setSize(sizes.width, sizes.height);
+};
+const render = () => {
+  renderer.render(scene, camera);
 };
 rendererShadowSetup(renderer);
 updateRenderer();
 
-export { renderer, updateRenderer };
+export { render, renderer, updateRenderer };
