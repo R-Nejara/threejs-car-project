@@ -10,7 +10,9 @@ const camera = new THREE.PerspectiveCamera(
 );
 
 // Set Camera Position
-camera.position.z = 5;
+const cameraPosition = new THREE.Vector3(0, 10, 10);
+
+camera.position.copy(cameraPosition);
 
 const recalculateViewport = () => {
   updateSizes();
