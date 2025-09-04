@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { directionalLightShadowSetup } from "./Shadow";
 
 const directionalLight = new THREE.DirectionalLight(0xffffff, 5);
 const directionalLightPosition = new THREE.Vector3(10, 10, 0);
@@ -8,6 +9,8 @@ const lights = new THREE.Group();
 directionalLight.position.copy(directionalLightPosition);
 directionalLight.castShadow = true;
 directionalLight.add(new THREE.AxesHelper(10));
+
+directionalLightShadowSetup(directionalLight);
 
 lights.add(directionalLight, ambientLight);
 
