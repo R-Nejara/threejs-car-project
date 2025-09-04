@@ -80,8 +80,8 @@ _Soon_
 
 ## 🖼️ Credits
 
-- **3D Model:** Created in Blender (or your preferred 3D software)
-- **Development:** [Your Name]
+- **3D Model:** Created in Blender
+- **Development:** [Rayan Nejara]
 - **Libraries:**
   - [Three.js](https://threejs.org/)
 
