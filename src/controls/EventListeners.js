@@ -1,3 +1,7 @@
 import { updateCamera } from "../core/Camera";
-
-window.addEventListener("resize", updateCamera);
+import { updateRenderer } from "../core/Renderer";
+window.addEventListener("resize", () => {
+  updateCamera();
+  updateRenderer();
+  console.log("resize");
+});
